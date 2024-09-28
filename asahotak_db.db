@@ -1,0 +1,20 @@
+CREATE DATABASE asah_otak;
+
+USE asah_otak;
+
+CREATE TABLE master_kata (
+    id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    kata VARCHAR(255) NOT NULL,
+    clue VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE point_game (
+    id_point INT(11) AUTO_INCREMENT PRIMARY KEY,
+    nama_user VARCHAR(255) NOT NULL,
+    total_point INT(20) NOT NULL
+);
+
+INSERT INTO master_kata (kata, clue) VALUES
+('LEMARI', 'Aku tempat menyimpan pakaian?'),
+('SEPATU', 'Aku dipakai di kaki untuk berjalan?'),
+('MEJA', 'Aku digunakan untuk menaruh barang di atas?');
